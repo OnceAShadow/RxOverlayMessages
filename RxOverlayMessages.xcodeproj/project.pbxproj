@@ -12,9 +12,13 @@
 		83E6DA322054D2F1005A721A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E6DA302054D2F1005A721A /* Main.storyboard */; };
 		83E6DA342054D2F1005A721A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E6DA332054D2F1005A721A /* Assets.xcassets */; };
 		83E6DA372054D2F1005A721A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E6DA352054D2F1005A721A /* LaunchScreen.storyboard */; };
+		88190DC753D2B00B0E354A96 /* Pods_RxOverlayMessages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186D9B3EF7BC443ADE2648E7 /* Pods_RxOverlayMessages.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		186D9B3EF7BC443ADE2648E7 /* Pods_RxOverlayMessages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxOverlayMessages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25A1A19FED2FAF1C6384172D /* Pods-RxOverlayMessages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxOverlayMessages.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxOverlayMessages/Pods-RxOverlayMessages.release.xcconfig"; sourceTree = "<group>"; };
+		4562FE1897B21EE9F032ADA7 /* Pods-RxOverlayMessages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxOverlayMessages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxOverlayMessages/Pods-RxOverlayMessages.debug.xcconfig"; sourceTree = "<group>"; };
 		83E6DA292054D2F1005A721A /* RxOverlayMessages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxOverlayMessages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E6DA2C2054D2F1005A721A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83E6DA2E2054D2F1005A721A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88190DC753D2B00B0E354A96 /* Pods_RxOverlayMessages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3833E5C22A9C9B4E1952623C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4562FE1897B21EE9F032ADA7 /* Pods-RxOverlayMessages.debug.xcconfig */,
+				25A1A19FED2FAF1C6384172D /* Pods-RxOverlayMessages.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5095EFC9945C8B8E47EFE27E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				186D9B3EF7BC443ADE2648E7 /* Pods_RxOverlayMessages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		83E6DA202054D2F1005A721A = {
 			isa = PBXGroup;
 			children = (
 				83E6DA2B2054D2F1005A721A /* RxOverlayMessages */,
 				83E6DA2A2054D2F1005A721A /* Products */,
+				3833E5C22A9C9B4E1952623C /* Pods */,
+				5095EFC9945C8B8E47EFE27E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83E6DA3B2054D2F1005A721A /* Build configuration list for PBXNativeTarget "RxOverlayMessages" */;
 			buildPhases = (
+				9E2820AA31585452E2AD43D6 /* [CP] Check Pods Manifest.lock */,
 				83E6DA252054D2F1005A721A /* Sources */,
 				83E6DA262054D2F1005A721A /* Frameworks */,
 				83E6DA272054D2F1005A721A /* Resources */,
+				5A3177F38CAA56D2DE353578 /* [CP] Embed Pods Frameworks */,
+				BB1EA8D595D5EEA6C5C984DD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A3177F38CAA56D2DE353578 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxOverlayMessages/Pods-RxOverlayMessages-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxOverlayMessages/Pods-RxOverlayMessages-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E2820AA31585452E2AD43D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxOverlayMessages-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB1EA8D595D5EEA6C5C984DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxOverlayMessages/Pods-RxOverlayMessages-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		83E6DA252054D2F1005A721A /* Sources */ = {
@@ -272,31 +355,35 @@
 		};
 		83E6DA3C2054D2F1005A721A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4562FE1897B21EE9F032ADA7 /* Pods-RxOverlayMessages.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N36VHC7JD7;
 				INFOPLIST_FILE = RxOverlayMessages/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EventHorizon.RxOverlayMessages;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		83E6DA3D2054D2F1005A721A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25A1A19FED2FAF1C6384172D /* Pods-RxOverlayMessages.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N36VHC7JD7;
 				INFOPLIST_FILE = RxOverlayMessages/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EventHorizon.RxOverlayMessages;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
