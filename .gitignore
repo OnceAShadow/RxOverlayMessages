@@ -2,7 +2,7 @@
 .DS_Store
 build/
 .idea/
-xcuserdata/
+xcuserdata/*
 
 # CocoaPods
 Pods
