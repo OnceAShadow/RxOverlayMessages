@@ -1,10 +1,8 @@
-//
 //  ViewController.swift
 //  RxOverlayMessages
 //
 //  Created by iOS MAC on 3/10/18.
 //  Copyright © 2018 iOS MAC. All rights reserved.
-//
 
 import UIKit
 
@@ -20,6 +18,4 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
-
